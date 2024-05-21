@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Estilo/style.css">
+
+  <link rel="icon" href="../Imagens/favicon.svg" type="image/x-icon">
+  <title>Octopus Health | Resultado</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-image">
+      <img id="image" src="../Imagens/img2.svg" alt="">
+    </div>
+    <div class="form" action="#">
+      <form>
+        <div class="form-header">
+          <div class="title">
+            <h1>Resultado</h1>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-box">
+            <label>Estado atual</label>
+            <input id="estado-resultado" type="number" placeholder="NaNaNaNaNaNa" required disabled>
+          </div>
+
+          <div class="input-box">
+            <label>Índice de Massa corporal | Ideal: 18.5 - 24.9</label>
+            <input id="imc-resultado" type="number" placeholder="NaNaNaNaNaNa" required disabled>
+          </div>
+          <div class="input-box">
+            <label>Coeficiente de hidratação</label>
+            <input id="agua-resultado" type="number" placeholder="NaNaNaNaNaNa" required disabled>
+          </div>
+          <div class="input-box">
+            <label>Gasto de calorias diário</label>
+            <input id="calorias-resultado" type="number" placeholder="NaNaNaNaNaNa" required disabled>
+          </div>
+          <div class="input-box">
+            <label>Dieta recomendada</label>
+            <p id="dieta-resultado">NaNaNa</p>
+          </div>
+
+        </div>
+        <div class="continue-button">
+          <button type="button" id="calcular"><a href="../index.html">Finalizar :)</a></button>
+        </div>
+        <div class="continue-button">
+          <button type="button" onclick="salvar_resultado()" id="calcular"><a>Imprimir resultado</a></button>
+        </div>
+      </form>
+
+      <footer>
+        <h6><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1091498/pdf/pnas01945-0018.pdf"></br>Fontes</a></h6>
+      </footer>
+
+    </div>
+  </div>
+  <script src="../Scripts/script.js"></script>
+</body>
+
+</html>

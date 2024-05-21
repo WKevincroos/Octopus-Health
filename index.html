@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Estilo/style.css">
+
+  <link rel="icon" href="Imagens/favicon.svg" type="image/x-icon">
+  <title>Octopus Health | Formulário</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-image">
+      <img id="image" src="Imagens/img1.svg" alt="">
+    </div>
+    <div class="form" action="#">
+      <form>
+        <div class="form-header">
+          <div class="title">
+            <h1>Octopus Health</h1>
+          </div>
+          <div class="login-button">
+            <button type="button" onclick="anonimatize()"><a>Modo anônimo</a></button>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-box">
+            <label>Peso</label>
+            <input id="peso" type="number" placeholder="Digite seu peso em KG" required>
+          </div>
+
+          <div class="input-box">
+            <label>Idade</label>
+            <input id="idade" type="number" placeholder="Digite sua idade" required>
+          </div>
+          <div class="input-box">
+            <label>Altura</label>
+            <input id="altura" type="number" placeholder="Digite sua altura em CM" required>
+          </div>
+          <div class="input-box">
+            <label>Tempo de exercícios semanais</label>
+            <input id="tempo_exercicio" type="number" placeholder="Digite em minutos" required>
+          </div>
+
+        </div>
+
+        <div class="gender-inputs">
+          <div class="gender-title">
+            <h6>Gênero</h6>
+          </div>
+
+          <div class="gender-group">
+            <div class="gender-input">
+              <input id="feminino" type="radio" name="gender">
+              <label for="female">Feminino</label>
+            </div>
+
+            <div class="gender-input">
+              <input id="masculino" type="radio" name="gender">
+              <label for="male">Masculino</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="continue-button">
+          <button type="button" onclick="calculate()" id="calcular"><a>Calcular</a></button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="Scripts/script.js"></script>
+</body>
+
+</html>
